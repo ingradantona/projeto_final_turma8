@@ -41,9 +41,11 @@
     height: 150px;
     border-radius: 100%;
     border: 6px solid #FFFFFF;   
-    position: absolute; 
+    position: relative;
     /*margin-left: auto;*/
     left: auto;
+	/*novo*/
+	z-index: 4;
 }
 
 .caixa-carrossel {
@@ -75,7 +77,9 @@
     height: 200px;
     position: absolute;
     left: auto;
-    margin-top: 5%;
+	/*novo*/
+    margin-top: -5%;
+	z-index: 1;
     
 }
 
