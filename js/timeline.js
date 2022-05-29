@@ -3,7 +3,6 @@ let ul = document.querySelector("#timeline")
 function makeTimeline(arr){
     for (let i = 0; i < arr.length; i++){
         let li = document.createElement("li")
-    
         let divClass = ""
         let imgClass = ""
         let titleClass = ""
