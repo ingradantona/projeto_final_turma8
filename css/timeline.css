@@ -24,7 +24,7 @@ body {
 }
 
 /* Container around content */
-.container {
+.container-timeline {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
@@ -55,7 +55,7 @@ body {
 }
 
 /* The actual content */
-.content {
+.content-timeline {
     padding: 20px 30px;
     text-align: justify;
     background-color: #A80359;
@@ -65,14 +65,13 @@ body {
 
 .imageLeft {
     right: -3px;
-
 }
 
 .imageRight {
     left: -3px;
 }
 
-.content img {
+.content-timeline img {
     position: absolute;
     width: 160px;
     height: 160px;
@@ -99,8 +98,6 @@ body {
 }
 
 
-
-
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
 
@@ -110,13 +107,13 @@ body {
     }
 
     /* Full-width containers */
-    .container {
+    .container-timeline {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
 
-    .content img {
+    .content-timeline img {
         left: 0%;
     }
 
@@ -131,7 +128,6 @@ body {
     .right {
         left: 0%;
     }
-
 
     .titleRight {
         margin: 0 0 4px 60px;
