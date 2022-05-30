@@ -43,12 +43,14 @@ body {
 .left {
     left: 120px;
     border-radius: 50px 0px;
+    padding: 20px 50px 15px 20px;
 }
 
 /* Place the container to the right */
 .right {
     left: 45%;
     border-radius: 0px 50px;
+    padding: 20px 20px 15px 50px;
 }
 
 /* Fix the circle for containers on the right side */
@@ -58,7 +60,6 @@ body {
 
 /* The actual content */
 .content-timeline {
-    padding: 20px 50px 15px 20px;
     margin: 40px 50px;
     text-align: justify;
     background-color: #A80359;
