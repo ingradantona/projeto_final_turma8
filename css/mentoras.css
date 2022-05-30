@@ -6,7 +6,6 @@
 .mentoras-texto {  
     padding-top: 3em;  
     color: #FFFFFF;
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
     margin: 0 20% 0 20%;
 }
@@ -15,72 +14,66 @@
     text-transform: uppercase;
     font-weight: bold;
     padding-bottom: 1em;
+    text-align: center;
 }
 
 .mentoras-texto p{    
     font-size: 0.8em;
     padding-bottom: 1em;
+    text-align: justify;
 }
 
 .mentoras-texto hr{        
     height: 3px;
-    background-color: #FFFFFF;    
-}
-
-.imagem-mentora {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1.5em;
-    display: relative;
-}
-
-.imagem-mentora img {
-  /*  width: 100%;*/
-    /*height: 100%;*/
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    border: 6px solid #FFFFFF;   
-    position: relative;
-    /*margin-left: auto;*/
-    left: auto;
-	/*novo*/
-	z-index: 4;
+    background-color: #FFFFFF;     
+    border-radius: 10px;
+    width: 100%;
 }
 
 .caixa-carrossel {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    /*position: relative;*/
 }
 
-.lista {
-    margin-left: 100px;
-    margin-right: auto;
-    display: block;
+.item-carrossel {
+   /*position: relative;*/
+   position: relative;   
+   display: flex;
+   /*display: -webkit-flex; /* Garante compatibilidade com navegador Safari. */
+   justify-content: center;   
 }
 
-.lista li {
-    padding-left: 1em;
-    height: auto;
+.imagem-mentora {
+    margin-top: 1em;
+    position: absolute;    
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 6px solid #FFFFFF;   
+ /*   position: absolute;*/
+    /*margin-left: auto;*/
+    left: auto;    
+	/*novo*/
+	z-index: 4;
 }
 
 .caixa-texto-mentora { 
-    padding-top: 5em;  
+    padding-top: 3em;  
     background-color: #F6F6F6;
     color: #393436;
-    text-align: center;
-    /*margin: 0 20% 0 20%;   */
+    text-align: center;    
     border: 1px solid #000000; 
-    border-radius: 13%;
-    width: 300px;
-    height: 200px;
-    position: absolute;
-    left: auto;
-	/*novo*/
-    margin-top: -5%;
+    border-radius: 40px;
+    /*position: absolute;    */
+   /* margin-top: 6em;*/
 	z-index: 1;
-    
+    margin-left: auto;
+    margin-right: auto;    
+    margin-top: 130px;
+    width: 450px;
+    height: 220px;
 }
 
 .caixa-texto-mentora h3{ 
@@ -90,7 +83,8 @@
 }
 
 .caixa-texto-mentora p{ 
-    padding: 0 15% 10% 15%;    
+    padding: 0 5% 5% 5%;    
+    text-align: justify;
 }
 
 .caixa-texto-mentora h5{ 
