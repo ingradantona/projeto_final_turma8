@@ -7,27 +7,24 @@ function makeTimeline(arr){
         let imgClass = ""
         let titleClass = ""
         let subtitleClass = ""
-        let pClass = ""
     
         if (i % 2 === 0){
-            li.classList.add("container-timeline", "left", "containerInternalLeft")
+            li.classList.add("container-timeline", "left")
 
             divContainerInternal = ""    
             divClass = "content-timeline left"
             imgClass = "imageLeft"
             titleClass = "titleLeft"
             subtitleClass = "subtitleLeft"
-            pClass = ""
     
         } else {
-            li.classList.add("container-timeline", "right", "containerInternalRigth")
+            li.classList.add("container-timeline", "right")
 
             divContainerInternal = ""    
             divClass = "content-timeline right"
             imgClass = "imageRight"
             titleClass = "titleRight"
             subtitleClass = "subtitleRight"
-            pClass = ""
         }
     
         li.innerHTML = `
