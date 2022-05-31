@@ -47,14 +47,13 @@
 }
 
 .imagem-mentora {
-    margin-top: 1em;
+    margin-top: -14em;
     position: absolute;
     width: 10em;
     height: 10em;
     border-radius: 50%;
-    border: 6px solid #FFFFFF;
-    margin-left: 37%;
-
+    border: 6px solid #FFFFFF;  
+    z-index: 4;
 }
 
 .caixa-texto-mentora {
