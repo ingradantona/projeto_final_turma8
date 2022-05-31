@@ -1,7 +1,11 @@
 .history {
     background-color: var(--branco);
-    font-family: Open-Sans;
     position: relative;
+}
+
+.history p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -33,7 +37,7 @@
     position: relative;
     
 }
-.botton-circle{
+.bottom-circle{
     background-color: var(--cinza);
     height: 50px;
     width: 50px;
@@ -44,7 +48,6 @@
     
 }
 
-
 /* Container around content */
 .container-timeline {
     padding: 10px 40px;
@@ -52,12 +55,7 @@
     background-color: inherit;
     width: 50%;
     border-radius: 50px 0px;
-
 }
-
-/*
-<img src="./images/timeline/ada-lovelace.png" alt="Image - Ada Lovelace">
- */
 
 /* Place the container to the left */
 .left {
@@ -84,7 +82,6 @@
     text-align: justify;
     background-color: #A80359;
     color: #F6F6F6;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: normal;
 }
 
@@ -119,27 +116,31 @@
 .titleRight {
     margin: 0 0 0 100px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     text-align: right;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .subtitleRight {
     margin: 0 0 30px 100px;
-    text-align: right;
-    font-size: 16px;
     font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .titleLeft {
     margin: 4px 0 0;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .subtitleLeft {
     margin: 0 0 30px 0;
-    font-size: 16px;
     font-weight: bold;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
