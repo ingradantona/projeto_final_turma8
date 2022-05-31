@@ -1,31 +1,33 @@
 .mentoras {
     background-color: #4F1A46;
-    height: 1000px; /*ajustar isso*/
+    height: 100%;
+    padding-bottom: 2em;
 }
 
-.mentoras-texto {  
-    padding-top: 3em;  
+.mentoras-texto {
+    padding-top: 3em;
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
     margin: 0 20% 0 20%;
 }
 
-.mentoras-texto h2{    
+.mentoras-texto h2 {
     text-transform: uppercase;
     font-weight: bold;
     padding-bottom: 1em;
     text-align: center;
+    font-size: 1.5em;
 }
 
-.mentoras-texto p{    
-    font-size: 0.8em;
+.mentoras-texto p {
+    font-size: 0.9em;
     padding-bottom: 1em;
     text-align: justify;
 }
 
-.mentoras-texto hr{        
+.mentoras-texto hr {
     height: 3px;
-    background-color: #FFFFFF;     
+    background-color: #FFFFFF;
     border-radius: 10px;
     width: 100%;
 }
@@ -34,61 +36,57 @@
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    /*position: relative;*/
 }
 
 .item-carrossel {
-   /*position: relative;*/
-   position: relative;   
-   display: flex;
-   /*display: -webkit-flex; /* Garante compatibilidade com navegador Safari. */
-   justify-content: center;   
+    position: relative;
+    display: flex;    
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .imagem-mentora {
     margin-top: 1em;
-    position: absolute;    
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    border: 6px solid #FFFFFF;   
- /*   position: absolute;*/
-    /*margin-left: auto;*/
-    left: auto;    
-	/*novo*/
-	z-index: 4;
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 6px solid #FFFFFF;
+    margin-left: 37%;
+
 }
 
-.caixa-texto-mentora { 
-    padding-top: 3em;  
+.caixa-texto-mentora {
+    padding-top: 4em;
     background-color: #F6F6F6;
     color: #393436;
-    text-align: center;    
-    border: 1px solid #000000; 
+    text-align: center;
+    border: 1px solid #000000;
     border-radius: 40px;
-    /*position: absolute;    */
-   /* margin-top: 6em;*/
-	z-index: 1;
+    z-index: 1;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
     margin-top: 130px;
-    width: 450px;
-    height: 220px;
+    width: 28em;
+    height: 14em;
 }
 
-.caixa-texto-mentora h3{ 
-    padding-bottom: 1em;   
+.caixa-texto-mentora h3 {
+    padding-bottom: 1em;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    font-size: 1.3em;
 }
 
-.caixa-texto-mentora p{ 
-    padding: 0 5% 5% 5%;    
+.caixa-texto-mentora p {
+    padding: 0 5% 5% 5%;
     text-align: justify;
 }
 
-.caixa-texto-mentora h5{ 
+.caixa-texto-mentora h5 {
     font-size: small;
     padding-bottom: 1em;
     font-weight: bold;
+    padding-top: 13%;
 }
