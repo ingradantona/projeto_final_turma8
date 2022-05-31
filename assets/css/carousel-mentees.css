@@ -1,0 +1,103 @@
+
+body{
+	font-family: "Open Sans", sans-serif;
+  background-color: #4F1A46;
+
+}
+
+/*indicator de passar as fotos
+.carousel-indicators li {
+
+  box-sizing: content-box;
+  flex: 0 1 auto;
+
+
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+
+
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  transition: opacity 0.6s ease; 
+
+}*/
+    
+
+/*prev-next */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display:inline-block;
+  width: 4rem;
+  height: 4rem;
+  background: 50% / 100% 100% no-repeat; 
+ /* background-color: #fff; */
+  align-items: center;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-caret-left-square-fill" viewBox="0 0 16 16"> <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm10.5 10V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4A.5.5 0 0 0 10.5 12z"/> </svg>');
+}
+  
+  .carousel-control-next-icon {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-caret-right-square-fill" viewBox="0 0 16 16"> <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z"/> </svg>'); 
+}
+
+.carousel-mentees {
+  width: 550px;
+  align-items: center;
+
+}
+
+/*foto carrossel */
+.carousel-inner {
+  border-radius: 8%;
+
+}
+
+.Carol {
+  color: #f6f6f6;
+  font-weight: bold;
+}
+
+.Web-Carol {
+  color:#f6f6f6;
+}
+
+.des-Carol {
+  color:#f6f6f6;
+}
+
+.icon-github {
+  color: #f6f6f6;
+}
+
+.icon-linkedin {
+  color: #f6f6f6;
+}
+
+.nome-mentees {
+  font-weight: bold;
+
+}
+
+/* texto carrossel*/
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+  text-align:center; 
+}
+    
