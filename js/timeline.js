@@ -4,7 +4,7 @@ function makeTimeline(arr){
     for (let i = 0; i < arr.length; i++){
         let li = document.createElement("li")
         let divClass = ""
-        let imgClass = ""
+        let divImg = ""
         let titleClass = ""
         let subtitleClass = ""
     
@@ -13,7 +13,7 @@ function makeTimeline(arr){
 
             divContainerInternal = ""    
             divClass = "content-timeline left"
-            imgClass = "imageLeft"
+            divImg = "background-img-timeline imageLeft"
             titleClass = "titleLeft"
             subtitleClass = "subtitleLeft"
     
@@ -22,14 +22,16 @@ function makeTimeline(arr){
 
             divContainerInternal = ""    
             divClass = "content-timeline right"
-            imgClass = "imageRight"
+            divImg = "background-img-timeline imageRight"
             titleClass = "titleRight"
             subtitleClass = "subtitleRight"
         }
     
         li.innerHTML = `
             <div class="${divClass}">
-                <img class="${imgClass}" src="${arr[i].img}" alt="${arr[i].imgAlternative}">
+                <div class="${divImg}">
+                <img src="${arr[i].img}" alt="${arr[i].imgAlternative}">
+                </div>
                 <h2 class="${titleClass}">${arr[i].name}</h2>
                 <h5 class="${subtitleClass}">${arr[i].age}</h5>
                 <p>${arr[i].history}</p>
