@@ -1,3 +1,75 @@
+:root {
+    --cor-font: #393436;
+    --cor-fundo-header: #F6F6F6;
+    --cor-hover: #870B3B;
+    --cor-fundo-section: #4F1A46;
+    --font-menu: 'Open Sans', sans-serif;
+    --font-banner: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container__header {
+    background-color: var(--cor-fundo-header);
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.container__header-logo {
+    width: 80px;
+}
+
+.container__header-item {
+    margin-left: 120px;
+    text-decoration: none;
+    font-family: var(--font-menu);
+    font-weight: 600;
+    color: var(--cor-font);
+}
+
+.container__header-item:hover {
+    border-bottom: 3px solid var(--cor-hover);
+}
+
+.container__banner {
+    height: 89vh;
+    background-color: var(--cor-fundo-section);
+    display: flex;
+    align-items: center;
+}
+
+.container__banner-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.detalhe-laranja {
+    position: absolute;
+    left: 370px;
+    top: 145px;
+    width: 350px;
+}
+
+.detalhe-circulo {
+    position: relative;
+    top: 200px;
+    left: 60px;
+    width: 150px;
+}
+
+.foto-mulheres {
+    position: absolute;
+    left: 200px;
+    top: 160px;
+    width: 500px;
+}
+
 .logo{
    
     padding: 10px;
