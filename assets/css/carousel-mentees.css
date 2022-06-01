@@ -2,6 +2,7 @@
 body{
 	font-family: "Open Sans", sans-serif;
   background-color: #4F1A46;
+  width: 100%;
 
 }
 
@@ -29,7 +30,9 @@ body{
   transition: opacity 0.6s ease; 
 
 }*/
-    
+
+
+
 
 /*prev-next */
 .carousel-control-prev-icon,
@@ -51,28 +54,23 @@ body{
 }
 
 .carousel-mentees {
-  width: 550px;
+  width: 570px; /*largura foto */
   align-items: center;
+
 
 }
 
 /*foto carrossel */
 .carousel-inner {
-  border-radius: 8%;
+  border-radius: 50%; /*borda foto */
+  border:white solid;
 
 }
 
-.Carol {
-  color: #f6f6f6;
-  font-weight: bold;
-}
-
-.Web-Carol {
-  color:#f6f6f6;
-}
-
-.des-Carol {
-  color:#f6f6f6;
+/*tamanho fotos */
+.carousel-inner > .carousel-item > img {
+  width: 100%;
+  height: 500px; 
 }
 
 .icon-github {
@@ -85,7 +83,10 @@ body{
 
 .nome-mentees {
   font-weight: bold;
+}
 
+.web-developer {
+  font-style: italic;
 }
 
 /* texto carrossel*/
@@ -99,5 +100,17 @@ body{
   padding-bottom: 20px;
   color: black;
   text-align:center; 
+  float:right;
 }
-    
+
+.carrossel-esquerda {
+  width: 75%;
+  float: left;
+}
+
+.texto-mentees {
+  float:left;
+  width: 25%;
+
+}
+
