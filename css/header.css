@@ -1,9 +1,14 @@
+.header_principal{
+    width: 100%;
+    position: fixed;
+    
+}
 .logo_header{
     height:6rem;
     width: 7rem;
-   
 }
 .main-menu{
+    background-color: #F6F6F6;
     padding: 0% auto;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +23,9 @@
     padding: 0;
     font-size: 16px;
     font-family: Open Sans;
-    margin:1rem;
+    margin:2rem;
+    line-height: 3;
+    flex-wrap: wrap;
     
 }
 
@@ -89,6 +96,7 @@
     display: flex;
     align-items: center;
     width: 100%;
+
 }
 
 .container__banner-conteudo {
@@ -100,23 +108,25 @@
     position: absolute;
     left: 26%;
     top: 24%;
-    width: 450px;
-    height: 66px;
+    width: 26rem;
+    height: 5rem;
 }
 
 .detalhe-circulo {
     position: absolute;
-    top: 75%;
-    left: 45%;
-    width:10.5%;
+    top: 60%;
+    left: 47%;
+    width:10.9%;
+
     
 }
 
 .foto-mulheres {
     position: absolute;
-    left: 200px;
-    top: 26%;
-    width: 40%;
+    left: 13rem;
+    top: 17rem;
+    width: 40rem;
+  
 }
 
 .paragrafo_header{
