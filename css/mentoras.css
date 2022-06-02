@@ -126,12 +126,14 @@ main {
     width: 100%;
     
     text-align: center;
-    line-height: 100px;
+    /*line-height: 50px;*/
     justify-content: flex-end;
 
     display: flex; /*usando o flex ele se adapta de maneira fixa*/
     flex-direction: column; /*para a logo e botao ficarem alinhados entre si*/
     justify-content: center; 
+	
+	
 
 }
 
