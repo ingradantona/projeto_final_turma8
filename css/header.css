@@ -1,3 +1,4 @@
+/* Header inteiro */
 :root {
     --cor-font: #393436;
     --cor-fundo-header: #F6F6F6;
@@ -11,6 +12,7 @@
     box-sizing: border-box;
 }
 
+/* Header */
 .container__header {
     background-color: var(--cor-fundo-header);
     max-width: 1200px;
@@ -42,6 +44,7 @@
     border-bottom: 3px solid var(--cor-hover);
 }
 
+/* Section */
 .container__banner {
     height: 90vh;
     background-color: var(--cor-fundo-section);
@@ -97,6 +100,7 @@
     text-transform: uppercase;
 }
 
+/* media para tablet */
 @media screen and (max-width: 900px) {
     .container__header {
         display: flex;
@@ -155,6 +159,7 @@
     }
 }
 
+/* media para mobile */
 @media screen and (max-width: 600px) {
     .container__header {
         display: flex;
