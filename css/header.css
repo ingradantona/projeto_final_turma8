@@ -1,44 +1,154 @@
-.logo{
-   
-    padding: 10px;
-   
-}
-.menu{
-    list-style: none;
-    padding: 0;
+.header_principal{
+    width: 100%;
+    position: fixed;
     
 }
-
+.logo_header{
+    height:6rem;
+    width: 7rem;
+}
 .main-menu{
-
-    padding: 0 20px;
+    background-color: #F6F6F6;
+    padding: 0% auto;
     justify-content: space-between;
     align-items: center;
 }
 
-nav, ul {
+.caixa_header{
+    margin: 0 0 0 8%;
+}
+
+.menu_header{
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    font-family: Open Sans;
+    margin:2rem;
+    line-height: 3;
+    flex-wrap: wrap;
+    
+}
+
+.main-menu,.menu_header{
     display: flex;
     flex-direction: row;
 }
 
-
-.item{
-    padding: 0 20px;
-    color: black;
+.item_header{
+    color: #000000;
     text-decoration: none;
-    text-transform: uppercase;
     font-weight: bold;
-    padding: 12px 21px;
+    padding: 1vh 1.5vh;
     border-radius: 4px;
-    margin: 0 220px 20px 0;
+    margin: 5rem;
+    text-align: center;
+}
+
+.item_header:hover{
+    cursor: pointer;
+    background-color: #f5b3d5;
+    transition: 0.6s;
+  
+}
+
+:root {
+    --cor-font: #393436;
+    --cor-fundo-header: #F6F6F6;
+    --cor-hover: #870B3B;
+    --cor-fundo-section: #4F1A46;
+    --font-menu: 'Open Sans', sans-serif;
+    --font-banner: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container__header {
+    background-color: var(--cor-fundo-header);
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.container__header-logo {
+    width: 80px;
+}
+
+.container__header-item {
+    margin-left: 120px;
+    text-decoration: none;
+    font-family: var(--font-menu);
+    font-weight: 600;
+    color: var(--cor-font);
+}
+
+.container__header-item:hover {
+    border-bottom: 3px solid var(--cor-hover);
+}
+
+.container__banner {
+    height: 100vh;
+    background-color: var(--cor-fundo-section);
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+.container__banner-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.detalhe-laranja {
+    position: absolute;
+    left: 26%;
+    top: 24%;
+    width: 26rem;
+    height: 5rem;
+}
+
+.detalhe-circulo {
+    position: absolute;
+    top: 60%;
+    left: 47%;
+    width:10.9%;
+
     
 }
 
+.foto-mulheres {
+    position: absolute;
+    left: 13rem;
+    top: 17rem;
+    width: 40rem;
+  
+}
 
-.item:hover{
-    cursor: pointer;
-    background-color: #ea92bf;
-    transition: 0.s;
-   
-   
+.paragrafo_header{
+    position: absolute;
+    border-color: #870B3B;
+    border-width: 1.3rem 0 1.3rem 0;
+    border-style: solid;
+    padding: 2rem 1rem;
+    margin: 50%;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    width: 20%;
+    
+}
+
+.paragrafo_principal_header{
+    text-align:left;
+    color:  #393436;
+    font-size: 30px;
+    font-weight:bold;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    
+    
 }
