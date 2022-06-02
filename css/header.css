@@ -21,7 +21,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 25px;
-    height: 10vh;
+    height: 80px;
 }
 
 .container__header ul {
@@ -46,7 +46,7 @@
 
 /* Section */
 .container__banner {
-    height: 90vh;
+    height: 88vh;
     background-color: var(--cor-fundo-section);
 }
 
@@ -57,24 +57,24 @@
 
 .detalhe-laranja {
     position: absolute;
-    left: 500px;
-    top: 85px;
+    left: 420px;
+    top: 115px;
     width: 400px;
     z-index: 3;
 }
 
 .detalhe-circulo {
     position: absolute;
-    top: 435px;
-    left: 750px;
-    width: 200px;
+    top: 460px;
+    left: 680px;
+    width: 180px;
     z-index: 1;
 }
 
 .foto-mulheres {
     position: absolute;
-    left: 280px;
-    top: 105px;
+    left: 200px;
+    top: 135px;
     width: 600px;
     z-index: 2;
 }
@@ -92,8 +92,8 @@
     border-top: 20px solid var(--cor-hover);
     border-bottom: 20px solid var(--cor-hover);
     position: absolute;
-    left: 820px;
-    top: 165px;
+    left: 750px;
+    top: 190px;
     z-index: 4;
     font-family: var(--font-banner);
     line-height: 35px;
