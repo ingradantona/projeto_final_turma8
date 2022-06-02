@@ -19,6 +19,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 25px;
+    height: 10vh;
 }
 
 .container__header-logo {
@@ -38,7 +39,7 @@
 }
 
 .container__banner {
-    height: 89vh;
+    height: 90vh;
     background-color: var(--cor-fundo-section);
     display: flex;
     align-items: center;
@@ -51,16 +52,18 @@
 
 .detalhe-laranja {
     position: absolute;
-    left: 370px;
+    left: 27%;
     top: 145px;
     width: 350px;
+    z-index: 3;
 }
 
 .detalhe-circulo {
     position: relative;
-    top: 200px;
-    left: 60px;
+    top: 165px;
+    left: 5%;
     width: 150px;
+    z-index: 1;
 }
 
 .foto-mulheres {
@@ -68,6 +71,7 @@
     left: 200px;
     top: 160px;
     width: 500px;
+    z-index: 2;
 }
 
 .logo{
