@@ -57,24 +57,24 @@
 
 .detalhe-laranja {
     position: absolute;
-    left: 630px;
-    top: 230px;
+    left: 500px;
+    top: 85px;
     width: 400px;
     z-index: 3;
 }
 
 .detalhe-circulo {
     position: absolute;
-    top: 590px;
-    left: 870px;
+    top: 435px;
+    left: 750px;
     width: 200px;
     z-index: 1;
 }
 
 .foto-mulheres {
     position: absolute;
-    left: 400px;
-    top: 250px;
+    left: 280px;
+    top: 105px;
     width: 600px;
     z-index: 2;
 }
@@ -92,8 +92,8 @@
     border-top: 20px solid var(--cor-hover);
     border-bottom: 20px solid var(--cor-hover);
     position: absolute;
-    left: 950px;
-    top: 320px;
+    left: 820px;
+    top: 165px;
     z-index: 4;
     font-family: var(--font-banner);
     line-height: 35px;
