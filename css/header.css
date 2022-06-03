@@ -1,56 +1,4 @@
-.header_principal{
-    width: 100%;
-    position: fixed;
-    
-}
-.logo_header{
-    height:6rem;
-    width: 7rem;
-}
-.main-menu{
-    background-color: #F6F6F6;
-    padding: 0% auto;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.caixa_header{
-    margin: 0 0 0 8%;
-}
-
-.menu_header{
-    list-style: none;
-    padding: 0;
-    font-size: 16px;
-    font-family: Open Sans;
-    margin:2rem;
-    line-height: 3;
-    flex-wrap: wrap;
-    
-}
-
-.main-menu,.menu_header{
-    display: flex;
-    flex-direction: row;
-}
-
-.item_header{
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 1vh 1.5vh;
-    border-radius: 4px;
-    margin: 5rem;
-    text-align: center;
-}
-
-.item_header:hover{
-    cursor: pointer;
-    background-color: #f5b3d5;
-    transition: 0.6s;
-  
-}
-
+/* Header inteiro */
 :root {
     --cor-font: #393436;
     --cor-fundo-header: #F6F6F6;
@@ -64,39 +12,52 @@
     box-sizing: border-box;
 }
 
-.container__header {
+
+/* Header */
+dody{
     background-color: var(--cor-fundo-header);
+}
+.container__header {
     max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 25px;
+    height: 80px;
+}
+
+.container__header ul {
+    display: flex;
+   
 }
 
 .container__header-logo {
-    width: 80px;
+    width: 115px;
+    height: 86px;
+
 }
 
 .container__header-item {
-    margin-left: 120px;
+    margin-left: 122px;
     text-decoration: none;
     font-family: var(--font-menu);
     font-weight: 600;
     color: var(--cor-font);
+    
 }
 
 .container__header-item:hover {
-    border-bottom: 3px solid var(--cor-hover);
+    border-bottom:4px solid var(--cor-hover);
+    border-radius: 3px 3px;
+    transition: 0.4s;
 }
 
-.container__banner {
-    height: 100vh;
-    background-color: var(--cor-fundo-section);
-    display: flex;
-    align-items: center;
-    width: 100%;
 
+/* Section */
+.container__banner {
+    height: 88vh;
+    background-color: var(--cor-fundo-section);
 }
 
 .container__banner-conteudo {
@@ -106,49 +67,166 @@
 
 .detalhe-laranja {
     position: absolute;
-    left: 26%;
-    top: 24%;
-    width: 26rem;
-    height: 5rem;
+    left: 420px;
+    top: 115px;
+    width: 400px;
+    z-index: 3;
 }
 
 .detalhe-circulo {
     position: absolute;
-    top: 60%;
-    left: 47%;
-    width:10.9%;
-
-    
+    top: 460px;
+    left: 680px;
+    width: 180px;
+    z-index: 1;
 }
 
 .foto-mulheres {
     position: absolute;
-    left: 13rem;
-    top: 17rem;
-    width: 40rem;
-  
+    left: 200px;
+    top: 135px;
+    width: 600px;
+    z-index: 2;
 }
 
-.paragrafo_header{
-    position: absolute;
-    border-color: #870B3B;
-    border-width: 1.3rem 0 1.3rem 0;
-    border-style: solid;
-    padding: 2rem 1rem;
-    margin: 50%;
-    background-color: #F6F6F6;
-    border-radius: 10px;
-    width: 20%;
-    
-}
-
-.paragrafo_principal_header{
-    text-align:left;
-    color:  #393436;
+.container__banner-texto {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    color: var(--cor-font);
+    width: 300px;
+    height: 250px;
     font-size: 30px;
-    font-weight:bold;
+    background-color: var(--cor-fundo-header);
+    border-radius: 10px;
+    border-top: 20px solid var(--cor-hover);
+    border-bottom: 20px solid var(--cor-hover);
+    position: absolute;
+    left: 750px;
+    top: 190px;
+    z-index: 4;
+    font-family: var(--font-banner);
+    line-height: 35px;
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     
+}
+
+/* media para tablet */
+@media screen and (max-width: 900px) {
+    .container__header {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        padding: 0;
+        max-width: none;
+        margin: 20px 0;
+
+    }
+
+    .container__header-item {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    .container__banner {
+        height: 75vh;
+    }
+
+    .container__banner-conteudo {
+        max-width: none;
+        margin: 0;
+    }
+
+    .detalhe-laranja {
+        position: absolute;
+        left: 170px;
+        top: 180px;
+        width: 250px;
+        z-index: 3;
+    }
     
+    .detalhe-circulo {
+        position: absolute;
+        top: 342px;
+        left: 330px;
+        width: 125px;
+        z-index: 1;
+    }
+    
+    .foto-mulheres {
+        position: absolute;
+        left: 105px;
+        top: 188px;
+        width: 300px;
+        z-index: 2;
+    }
+
+    .container__banner-texto {
+        font-size: 20px;
+        left: 385px;
+        top: 220px;
+        width: 200px;
+        height: 160px;
+        line-height: normal;
+    }
+}
+
+/* media para mobile */
+@media screen and (max-width: 600px) {
+    .container__header {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        padding: 0;
+        max-width: none;
+        margin: 20px 0;
+    }
+
+    .container__header-item {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    .container__banner {
+        height: 75vh;
+    }
+
+    .container__banner-conteudo {
+        max-width: none;
+        margin: 0;
+    }
+
+    .detalhe-laranja {
+        position: absolute;
+        left: 85px;
+        top: 180px;
+        width: 250px;
+        z-index: 3;
+    }
+    
+    .detalhe-circulo {
+        position: absolute;
+        top: 342px;
+        left: 240px;
+        width: 125px;
+        z-index: 1;
+    }
+    
+    .foto-mulheres {
+        position: absolute;
+        left: 20px;
+        top: 188px;
+        width: 300px;
+        z-index: 2;
+    }
+
+    .container__banner-texto {
+        font-size: 20px;
+        left: 50px;
+        top: 380px;
+        width: 200px;
+        height: 160px;
+        line-height: normal;
+    }
 }
