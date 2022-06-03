@@ -68,7 +68,7 @@
     margin-right: auto;
     margin-top: 130px;
     width: 28em;
-    height: 14em;
+    height: 19em;
 }
 
 .caixa-texto-mentora h3 {
@@ -89,3 +89,48 @@
     font-weight: bold;
     padding-top: 13%;
 }
+
+body{
+	font-family: "Open Sans", sans-serif;
+}
+
+main {
+    background-color: #4F1A46;
+}
+
+/* Inicio Footer*/
+.footer-mentees {
+    background-color: #F6F6F6;
+    position: absolute;     
+    color: #F6F6F6;
+    width: 100%;    
+    text-align: center;
+    line-height: 100px;
+    justify-content: flex-end;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.footer-logo {
+    margin: 1em 0 2em 0;
+    height: 120px;    
+}
+
+#imagem-logo-footer {
+    width: 10%;
+    text-align: center;   
+}
+
+#botao-retornar {
+    font-size: 14px;
+    font-weight: 550;
+    text-decoration: none;
+    color: white;
+    background: #A80359;
+    border-radius: 15px;
+    padding: 15px;    
+    box-shadow: 1px 5px 12px gray; /*sombra no botao */    
+}
+
+/* Fim Footer*/
