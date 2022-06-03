@@ -112,6 +112,11 @@ main {
     justify-content: center; 
 }
 
+.footer-logo {
+    margin: 1em 0 2em 0;
+    height: 120px;    
+}
+
 #imagem-logo-footer {
     width: 10%;
     text-align: center;   
