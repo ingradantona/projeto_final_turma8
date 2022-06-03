@@ -129,8 +129,33 @@ main {
     color: white;
     background: #A80359;
     border-radius: 15px;
+<<<<<<< HEAD
     padding: 15px;    
     box-shadow: 1px 5px 12px gray; /*sombra no botao */    
+=======
+    padding: 15px;
+    box-shadow: 1px 5px 12px gray; /*sombra no botao */
+    
+}
+
+.footer-mentees {
+    background-color: #F6F6F6;
+    position: absolute; /*para diminuir o roxo */
+    /*bottom: 0;*/
+    color: #F6F6F6;
+    width: 100%;
+    
+    text-align: center;
+    /*line-height: 50px;*/
+    justify-content: flex-end;
+
+    display: flex; /*usando o flex ele se adapta de maneira fixa*/
+    flex-direction: column; /*para a logo e botao ficarem alinhados entre si*/
+    justify-content: center; 
+	
+	
+
+>>>>>>> 14c2dc888093d9b4ec96fff8916bfb689e6bff39
 }
 
 /* Fim Footer*/
