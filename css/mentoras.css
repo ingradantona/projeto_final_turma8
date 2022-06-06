@@ -82,13 +82,13 @@
     padding: 0 5% 5% 5%;
     text-align: justify;
     font-size: 0.9em;
+    line-height: 1.4em;
 }
 
 .caixa-texto-mentora h5 {
     font-size: small;
     padding-bottom: 1em;
-    font-weight: bold;
-    padding-top: 13%;
+    font-weight: bold;    
 }
 
 body{
