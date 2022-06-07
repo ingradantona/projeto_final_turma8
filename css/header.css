@@ -25,6 +25,7 @@ dody{
     align-items: center;
     padding: 0 25px;
     height: 80px;
+    
 }
 
 .container__header ul {
@@ -33,9 +34,9 @@ dody{
 }
 
 .container__header-logo {
-    width: 115px;
-    height: 86px;
-
+    width: 23%;
+    padding: 0px 10px;
+    
 }
 
 .container__header-item {
@@ -87,6 +88,7 @@ dody{
     top: 135px;
     width: 600px;
     z-index: 2;
+    
 }
 
 .container__banner-texto {
@@ -114,6 +116,13 @@ dody{
 
 /* media para tablet */
 @media screen and (max-width: 900px) {
+
+    .container__header-logo {
+        width: 115px;
+        height: 86px;
+        
+    
+    }
     .container__header {
         display: flex;
         flex-direction: column;
@@ -190,6 +199,7 @@ dody{
 
     .container__banner {
         height: 75vh;
+        
     }
 
     .container__banner-conteudo {
@@ -219,6 +229,7 @@ dody{
         top: 188px;
         width: 300px;
         z-index: 2;
+        
     }
 
     .container__banner-texto {
