@@ -72,10 +72,10 @@
 }
 
 .caixa-texto-mentora h3 {
-    padding-bottom: 1em;
+    padding: 2em 0 1em 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.3em;    
 }
 
 .caixa-texto-mentora p {
