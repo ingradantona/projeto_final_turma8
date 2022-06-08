@@ -126,7 +126,7 @@
     }
     
     .container__banner-texto {
-        width: 200px;
+        width: 180px;
         height: 130px;
         font-size: 20px;
         border-top: 15px solid var(--rosa-detalhes);
@@ -137,7 +137,7 @@
 }
 
 /* media para mobile */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 
     .container__header{
         height: 50px;

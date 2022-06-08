@@ -12,7 +12,7 @@ function makeTimeline(arr){
             li.classList.add("container-timeline", "left")
 
             divContainerInternal = ""    
-            divClass = "content-timeline left"
+            divClass = "content-timeline-left"
             divImg = "background-img-timeline imageLeft"
             titleClass = "titleLeft"
             subtitleClass = "subtitleLeft"
@@ -21,7 +21,7 @@ function makeTimeline(arr){
             li.classList.add("container-timeline", "right")
 
             divContainerInternal = ""    
-            divClass = "content-timeline right"
+            divClass = "content-timeline-right"
             divImg = "background-img-timeline imageRight"
             titleClass = "titleRight"
             subtitleClass = "subtitleRight"
