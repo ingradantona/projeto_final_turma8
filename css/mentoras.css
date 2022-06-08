@@ -88,7 +88,7 @@
 .caixa-texto-mentora h5 {
     font-size: small;
     padding-bottom: 1em;
-    font-weight: bold;    
+    font-weight: bold;        
 }
 
 body{
@@ -100,7 +100,7 @@ main {
 }
 
 /* Inicio Footer*/
-.footer-mentees {
+.footer-index {
     background-color: #F6F6F6;
     position: absolute;     
     color: #F6F6F6;
@@ -113,17 +113,17 @@ main {
     justify-content: center; 
 }
 
-.footer-logo {
+.footer-logo-index {
     margin: 1em 0 2em 0;
     height: 120px;    
 }
 
-#imagem-logo-footer {
-    width: 10%;
+#imagem-logo-footer-index {
+    width: 8em;
     text-align: center;   
 }
 
-#botao-retornar {
+#botao-retornar-index {
     font-size: 14px;
     font-weight: 550;
     text-decoration: none;
@@ -133,5 +133,19 @@ main {
     padding: 15px;    
     box-shadow: 1px 5px 12px gray; /*sombra no botao */    
 }
+
+@media screen and (max-width: 600px) {
+    .mentoras-texto {
+      margin: 0 10% 0 10%;
+    }
+
+    .caixa-texto-mentora p {
+        font-size: 12.5px;
+    }
+
+    .caixa-texto-mentora {
+        width: 350px;
+    }
+  }
 
 /* Fim Footer*/
