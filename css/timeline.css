@@ -1,7 +1,11 @@
 .history {
     background-color: var(--branco);
-    font-family: Open-Sans;
     position: relative;
+}
+
+.history p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -9,8 +13,7 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    max-width: 1200px;
-    margin: 100px auto;
+    padding: 100px 80px;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -23,54 +26,41 @@
     top: 0;
     border-radius: 10px;
 }
+
 .top-circle{
     background-color: var(--cinza);
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    bottom: 25px;
+    top: -25px;
     left: calc(50vw - 25px);
-    position: relative;
+    position: absolute;
     
 }
-.botton-circle{
+.bottom-circle{
     background-color: var(--cinza);
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    top: 25px;
+    top: calc(100% - 25px);
     left: calc(50vw - 25px);
-    position: relative;
-    
+    position: absolute;
 }
-
 
 /* Container around content */
 .container-timeline {
-    padding: 10px 40px;
     position: relative;
     background-color: inherit;
-    width: 55%;
+    width: 40vw;
     border-radius: 50px 0px;
-
+    margin: 20px 0px;
 }
-
-/*
-<img src="./images/timeline/ada-lovelace.png" alt="Image - Ada Lovelace">
- */
 
 /* Place the container to the left */
-.left {
-    left: 0;
-    border-radius: 50px 0px;
-    padding: 20px 50px 15px 50px;
-}
 
 /* Place the container to the right */
 .right {
-    left: 45%;
-    border-radius: 0px 50px;
-    padding: 20px 50px 15px 50px;
+    left: 48vw;
 }
 
 /* Fix the circle for containers on the right side */
@@ -79,21 +69,31 @@
 }
 
 /* The actual content */
-.content-timeline {
-    margin: 40px 50px;
+.content-timeline-left{
+    margin: 40px 0px;
     text-align: justify;
     background-color: #A80359;
     color: #F6F6F6;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: normal;
+    border-radius: 50px 0px;
+    padding: 20px 50px 15px 50px;
+}
+.content-timeline-right{
+    margin: 40px 0px;
+    text-align: justify;
+    background-color: #A80359;
+    color: #F6F6F6;
+    line-height: normal;
+    border-radius: 0px 50px;
+    padding: 20px 50px 15px 50px;
 }
 
 .imageLeft {
-    right: -3px;
+    right: -105px;
 }
 
 .imageRight {
-    left: -3px;
+    left: -105px;
 }
 
 .background-img-timeline{
@@ -101,12 +101,12 @@
     width: 210px;
     height: 210px;
     background-color: #A80359;
-    top: -56px;
+    top: -80px;
     border-radius: 50%;
     z-index: 1;
 }
 
-.content-timeline img {
+.background-img-timeline img {
     width: 200px;
     height: 200px;
     position: relative;
@@ -121,60 +121,63 @@
     font-weight: bold;
     font-size: 1.2rem;
     text-align: right;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .subtitleRight {
     margin: 0 0 30px 100px;
-    text-align: right;
-    font-size: 1rem;
     font-weight: bold;
+    font-size: 1rem;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .titleLeft {
     margin: 4px 0 0;
     font-weight: bold;
     font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .subtitleLeft {
     margin: 0 0 30px 0;
-    font-size: 1rem;
     font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 800px) {
-
-    .history{
-        width: 100vw;
+@media screen and (max-width: 1000px) {
+    #timeline{
+        justify-content: center;
+        align-items: center;
     }
 
     /* Full-width containers */
-    .container-timeline {
-        width: 500px;
-        margin-bottom: 30px;
+    .container-timeline{
+        width: 80vw;
+        margin: 50px auto;
     }
 
     .background-img-timeline{
+        position: absolute;
+        left: calc(50% - 80px);
         width: 160px;
         height: 160px;
-        left:35%;
+        
     }
 
-    .content-timeline img {
+    .background-img-timeline img {
         width: 150px;
         height: 150px;
     }
 
     /* Make all right containers behave like the left ones */
-    .right {
-        left: calc(50vw - 250px);
+    .right{
+        left: 0px;
     }
 
-    .left{
-        left: calc(50vw - 250px);
-    }
 
     .titleRight {
         margin: 30px 0 4px 0px;
@@ -194,5 +197,14 @@
     .subtitleLeft {
         margin: 0 0 4px 0px;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .left{
+        left: -20%;
+    }
+    .right{
+        left: -20%;
     }
 }
