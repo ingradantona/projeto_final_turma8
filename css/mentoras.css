@@ -22,7 +22,8 @@
 .mentoras-texto p {
     font-size: 0.9em;
     padding-bottom: 1em;
-    text-align: justify;
+    text-align: justify;    
+    line-height: 1.4em;
 }
 
 .mentoras-texto hr {
@@ -81,7 +82,7 @@
 .caixa-texto-mentora p {
     padding: 0 5% 5% 5%;
     text-align: justify;
-    font-size: 0.9em;
+    font-size: 0.95em;
     line-height: 1.4em;
 }
 
@@ -133,10 +134,12 @@ main {
     padding: 15px;    
     box-shadow: 1px 5px 12px gray; /*sombra no botao */    
 }
+/* Fim Footer*/
 
 @media screen and (max-width: 600px) {
+
     .mentoras-texto {
-      margin: 0 10% 0 10%;
+      margin: 0 8% 0 8%;
     }
 
     .caixa-texto-mentora p {
@@ -144,8 +147,21 @@ main {
     }
 
     .caixa-texto-mentora {
-        width: 350px;
+        width: 350px important!;
+    }
+
+    .caixa-carrossel {
+        width: 75%;
+    }
+
+    .slick-next {
+        right: -70px;
+        visibility: hidden;
+        /*visibility: visible;*/
+    }
+
+    .slick-prev {
+        left: -80px;
+        visibility: hidden;
     }
   }
-
-/* Fim Footer*/
