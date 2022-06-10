@@ -1,55 +1,43 @@
 /* Header inteiro */
 :root {
-    --cor-font: #393436;
-    --cor-fundo-header: #F6F6F6;
-    --cor-hover: #870B3B;
-    --cor-fundo-section: #4F1A46;
     --font-menu: 'Open Sans', sans-serif;
     --font-banner: 'Montserrat', sans-serif;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 
 /* Header */
-dody{
-    background-color: var(--cor-fundo-header);
-}
+
 .container__header {
-    max-width: 1200px;
-    margin: auto;
+    background-color: var(--branco);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 25px;
+    padding: 0 80px;
     height: 80px;
-    
 }
 
 .container__header ul {
     display: flex;
-   
+    width: 40vw;
+    max-width: 400px;
+    justify-content: space-between;
 }
 
 .container__header-logo {
-    width: 22%;
-    padding: 0px 10px;
-    
+    width: 85px;
+    height: auto;
 }
 
 .container__header-item {
-    margin-left: 122px;
     text-decoration: none;
     font-family: var(--font-menu);
     font-weight: 600;
-    color: var(--cor-font);
-    
+    color: var(--cinza);
 }
 
 .container__header-item:hover {
-    border-bottom:4px solid var(--cor-hover);
+    border-bottom:4px solid var(--rosa-detalhes);
     border-radius: 3px 3px;
     transition: 0.4s;
 }
@@ -57,187 +45,144 @@ dody{
 
 /* Section */
 .container__banner {
-    height: 88vh;
-    background-color: var(--cor-fundo-section);
+    height: 780px;
+    background-color: var(--roxo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container__banner-conteudo {
-    max-width: 1200px;
-    margin: 0 auto;
+    position: relative;
 }
 
 .detalhe-laranja {
     position: absolute;
-    left: 420px;
-    top: 115px;
-    width: 400px;
+    right: -220px;
+    bottom: 210px;
+    width: 450px;
     z-index: 3;
 }
 
 .detalhe-circulo {
     position: absolute;
-    top: 460px;
-    left: 680px;
-    width: 180px;
+    left: 50px;
+    top: 110px;
+    width: 200px;
     z-index: 1;
 }
 
 .foto-mulheres {
     position: absolute;
-    left: 200px;
-    top: 135px;
-    width: 600px;
+    right: -200px;
+    bottom: -245px;
+    width: 650px;
     z-index: 2;
-    
 }
 
 .container__banner-texto {
     display: flex;
     align-items: center;
-    padding: 15px 10px;
-    color: var(--cor-font);
+    padding: 15px;
+    color: var(--cinza);
     width: 300px;
-    height: 250px;
+    height: 190px;
     font-size: 30px;
-    background-color: var(--cor-fundo-header);
+    background-color: var(--branco);
     border-radius: 10px;
-    border-top: 20px solid var(--cor-hover);
-    border-bottom: 20px solid var(--cor-hover);
+    border-top: 20px solid var(--rosa-detalhes);
+    border-bottom: 20px solid var(--rosa-detalhes);
     position: absolute;
-    left: 750px;
-    top: 190px;
+    bottom: -125px;
+    left: 170px;
     z-index: 4;
     font-family: var(--font-banner);
     line-height: 35px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
     
 }
 
 /* media para tablet */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
 
-    .container__header-logo {
-        width: 115px;
-        height: 86px;
-        
-    
-    }
-    .container__header {
-        display: flex;
-        flex-direction: column;
-        height: 100px;
-        padding: 0;
-        max-width: none;
-        margin: 20px 0;
-
-    }
-
-    .container__header-item {
-        margin-left: 0;
-        margin-right: 15px;
-    }
-
-    .container__banner {
-        height: 75vh;
-    }
-
-    .container__banner-conteudo {
-        max-width: none;
-        margin: 0;
+    .container__banner{
+        height: 650px;
     }
 
     .detalhe-laranja {
-        position: absolute;
-        left: 170px;
-        top: 180px;
-        width: 250px;
-        z-index: 3;
+        bottom: 150px;
+        width: 300px;
     }
     
     .detalhe-circulo {
-        position: absolute;
-        top: 342px;
-        left: 330px;
-        width: 125px;
-        z-index: 1;
+        top: 75px;
+        width: 150px;
     }
     
     .foto-mulheres {
-        position: absolute;
-        left: 105px;
-        top: 188px;
-        width: 300px;
-        z-index: 2;
+        bottom: -165px;
+        width: 450px;
     }
-
+    
     .container__banner-texto {
+        width: 180px;
+        height: 130px;
         font-size: 20px;
-        left: 385px;
-        top: 220px;
-        width: 200px;
-        height: 160px;
-        line-height: normal;
+        border-top: 15px solid var(--rosa-detalhes);
+        border-bottom: 15px solid var(--rosa-detalhes);
+        bottom: -65px;
+        line-height: 30px;      
     }
 }
 
 /* media para mobile */
-@media screen and (max-width: 600px) {
-    .container__header {
+@media screen and (max-width: 700px) {
+
+    .container__header{
+        height: 50px;
+    }
+
+    .container__header-logo{
+        width: 50px;
+    }
+
+    .container__header ul {
         display: flex;
-        flex-direction: column;
-        height: 100px;
-        padding: 0;
-        max-width: none;
-        margin: 20px 0;
+        width: 250px;
     }
 
     .container__header-item {
-        margin-left: 0;
-        margin-right: 15px;
+        font-size: 0.8rem;
     }
 
-    .container__banner {
-        height: 75vh;
-        
-    }
-
-    .container__banner-conteudo {
-        max-width: none;
-        margin: 0;
+    .container__header{
+        padding: 5px 15px;
     }
 
     .detalhe-laranja {
-        position: absolute;
-        left: 85px;
-        top: 180px;
-        width: 250px;
-        z-index: 3;
+        right: -110px;
+        bottom: 230px;
+        width: 200px;
     }
     
     .detalhe-circulo {
-        position: absolute;
-        top: 342px;
-        left: 240px;
-        width: 125px;
-        z-index: 1;
+        left: 50px;
+        top: -50px;
+        width: 100px;
     }
     
     .foto-mulheres {
-        position: absolute;
-        left: 20px;
-        top: 188px;
-        width: 300px;
-        z-index: 2;
-        
+        bottom: -50px;
+        right: -100px;
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 60px;
     }
-
+    
     .container__banner-texto {
-        font-size: 20px;
-        left: 50px;
-        top: 380px;
-        width: 200px;
-        height: 160px;
-        line-height: normal;
+        top: 10px;
+        left: -100px;    
     }
 }
