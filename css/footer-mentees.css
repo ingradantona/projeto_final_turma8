@@ -16,7 +16,7 @@
 
 #imagem-logo-footer {
     width: 10%;
-    min-width: 100px;
+    min-width: 120px;
     text-align: center;
    
 }
@@ -33,9 +33,6 @@
 }
 
 @media screen and (max-width: 800px) {
-    #imagem-logo-footer {
-        width: 40%;
-    }
 
     #botao-retornar {
         width: 40%;
