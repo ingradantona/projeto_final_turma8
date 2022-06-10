@@ -155,13 +155,12 @@ main {
     }
 
     .slick-next {
-        right: -70px;
-        visibility: hidden;
-        /*visibility: visible;*/
+        right: -25px;
+        /*visibility: hidden;*/
     }
 
     .slick-prev {
-        left: -80px;
-        visibility: hidden;
+        left: -36px;
+        /*visibility: hidden;*/
     }
   }
