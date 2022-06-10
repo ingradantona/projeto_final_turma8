@@ -49,9 +49,8 @@
 
 /* Container around content */
 .container-timeline {
-    position: relative;
     background-color: inherit;
-    width: 40vw;
+    width: 100%;
     border-radius: 50px 0px;
     margin: 20px 0px;
 }
@@ -60,17 +59,20 @@
 
 /* Place the container to the right */
 .right {
-    left: 48vw;
+    display: flex;
+    justify-content: start
 }
-
-/* Fix the circle for containers on the right side */
-.right::after {
-    left: -4px;
+.left{
+    display: flex;
+    justify-content: end;
 }
 
 /* The actual content */
 .content-timeline-left{
+    position: relative;
+    width: 30vw;
     margin: 40px 0px;
+    margin-right: calc(50% + 50px);
     text-align: justify;
     background-color: #A80359;
     color: #F6F6F6;
@@ -79,7 +81,10 @@
     padding: 20px 50px 15px 50px;
 }
 .content-timeline-right{
+    position: relative;
+    width: 30vw;
     margin: 40px 0px;
+    margin-left: calc(50% + 50px);
     text-align: justify;
     background-color: #A80359;
     color: #F6F6F6;
@@ -101,7 +106,7 @@
     width: 210px;
     height: 210px;
     background-color: #A80359;
-    top: -80px;
+    top: -130px;
     border-radius: 50%;
     z-index: 1;
 }
@@ -152,6 +157,7 @@
     #timeline{
         justify-content: center;
         align-items: center;
+        padding: 100px 0;
     }
 
     /* Full-width containers */
@@ -160,8 +166,16 @@
         margin: 50px auto;
     }
 
+    .right, .left {
+        justify-content: center;
+        align-items: center;
+    }
+
     .content-timeline-left, .content-timeline-right{
+        margin-left: 0;
+        margin-right: 0;
         border-radius: 50px 50px;
+        width: 50vw;
     }
 
     .background-img-timeline{
