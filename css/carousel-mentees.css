@@ -1,4 +1,5 @@
 .main-caroussel-mentees{
+  position: relative;
   margin: 0;
   padding: 0;
 	font-family: "Open Sans", sans-serif;
@@ -40,8 +41,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
+
 .img-mentee img {
   height: 300px;
   width: 300px;
@@ -82,6 +83,12 @@
  
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+ position: absolute;
+ top: 0;
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
 
@@ -102,15 +109,151 @@
 .detalhe-laranja-mentee{
   position: absolute;
   left: 20vw;
-  top: 190px;
+  top: 100px;
   width: 550px;
   z-index: 3;
 }
 
 .detalhe-circulo-mentee{
   position: absolute;
-  top: 650px;
+  top: 550px;
   left: 65vw;
   width: 180px;
   z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .main-caroussel-mentees{
+    height:680px;
+  }
+
+  .carousel-mentees{
+    height: 450px;
+    width: 550px;
+  }
+
+  .carousel-item{
+    width: 500px;
+    height: 400px;
+  }
+
+  .display-flex{
+    flex-direction: column;
+  }
+
+  .img-mentee{
+    height: 180px;
+    width: 180px;
+  }
+  .img-mentee img {
+    height: 170px;
+    width: 170px;
+  }
+
+  .carousel-content{
+    width: 400px;
+  }
+
+  .carousel-content h2{
+    margin-top: 10px;
+    font-size: 2rem;
+  }
+
+  .carousel-content h5{
+    line-height: 0.8rem;
+  }
+
+  .carousel-content p {
+    padding: 0px;
+  }
+
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .detalhe-laranja-mentee{
+    left: 5vw;
+    top: 80px;
+    width: 400px;
+  }
+  
+  .detalhe-circulo-mentee{
+    top: 450px;
+    left: 75vw;
+    width: 150px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .main-caroussel-mentees{
+    height:600px;
+  }
+
+  .carousel-mentees{
+    width: 250px;
+    height: 450px;
+  }
+
+  .carousel-item{
+    width: 225px;
+    height: 375px;
+  }
+
+  .img-mentee{
+    height: 150px;
+    width: 150px;
+  }
+  .img-mentee img {
+    height: 140px;
+    width: 140px;
+  }
+
+  .carousel-content{
+    width: 225px;
+  }
+
+  .carousel-content h2{
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+
+  .carousel-content h5{
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+  }
+
+  .carousel-content p {
+    padding: 0px;
+    font-size: 0.8rem;
+  }
+
+  .mentees-links img {
+    height: 25px;
+    margin: 10px;
+  
+  }
+
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .detalhe-laranja-mentee{
+    left: 15px;
+    top: 60px;
+    width: 220px;
+  }
+  
+  .detalhe-circulo-mentee{
+    top: 450px;
+    left: 65vw;
+    width: 110px;
+    z-index: 1;
+  }
 }
