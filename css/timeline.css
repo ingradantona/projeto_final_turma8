@@ -160,6 +160,10 @@
         margin: 50px auto;
     }
 
+    .content-timeline-left, .content-timeline-right{
+        border-radius: 50px 50px;
+    }
+
     .background-img-timeline{
         position: absolute;
         left: calc(50% - 80px);
