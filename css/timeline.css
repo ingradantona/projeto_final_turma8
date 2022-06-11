@@ -151,9 +151,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.content-timeline-left p, .content-timeline-right p{
+   font-size: 0.95rem;
+}
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
     #timeline{
         justify-content: center;
         align-items: center;
@@ -175,7 +178,10 @@
         margin-left: 0;
         margin-right: 0;
         border-radius: 50px 50px;
-        width: 50vw;
+        width: 60vw;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
     }
 
     .background-img-timeline{
