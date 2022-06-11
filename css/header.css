@@ -5,7 +5,6 @@
 }
 
 /* Header */
-
 .container__header {
     background-color: var(--branco);
     display: flex;
@@ -35,9 +34,15 @@
 }
 
 .container__header-item:hover {
-    border-bottom:4px solid var(--rosa-detalhes);
+    border-bottom: 4px solid var(--rosa-detalhes);
     border-radius: 3px 3px;
     transition: 0.4s;
+}
+
+a {
+    color: var(--cinza) !important;
+    text-decoration: none !important;
+    background-color: transparent;
 }
 
 
